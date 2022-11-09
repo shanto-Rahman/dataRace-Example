@@ -125,26 +125,6 @@
             </plugin>
                                         
             
-	    <!--            
-         
-        <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12</version>
-                <configuration>
-                    <skip>false</skip>
-                    <argLine>-javaagent:/home/shanto/Projects/Byte-Code-Instrumentation/scripts/agent-pom-modify/../../agent/target/agent-0.1-SNAPSHOT.jar</argLine>
-                </configuration>
-	    </plugin> -->
-        <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12</version>
-                <configuration>
-                    <skip>false</skip>
-                    <argLine>-javaagent:/home/shanto/Documents/Research/JTSVD/Byte-Code-Instrumentation/agent/target/agent-0.1-SNAPSHOT.jar</argLine>
-                </configuration>
-            </plugin>
         </plugins>
                           
     
