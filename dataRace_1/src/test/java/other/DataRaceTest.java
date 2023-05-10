@@ -11,6 +11,13 @@ public class DataRaceTest {
         System.out.println("Hello ");
     }
 
+    @Test
+    public void test1(){
+        run();
+	    if(buggy){
+		    System.out.println("Bug Found .. ");
+    	}
+    }
 
     public void run() {
 	    int threadsNum = 3;
@@ -43,14 +50,5 @@ public class DataRaceTest {
 	            }
             }
 	   }
-    }
-						    
-    @Test
-    public void test1(){
-	    DataRaceTest test = new  DataRaceTest(); 
-        test.run();
-	     if(buggy){
-		     System.out.println("Bug Found .. ");
-    	 }
     }
 }
