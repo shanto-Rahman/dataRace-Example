@@ -10,11 +10,11 @@ public class DataRace {
 	private static int[] testIntArr;
 
 	public static String[] Request3(){
-		System.out.println("Request3 Start");
+		//System.out.println("Request3 Start");
 		ArrayList arr3 = new ArrayList();
 		for(int i=0;i<5;i++){
 			arr3.add("Request 3");
-			System.out.println("Request3 End");
+			//System.out.println("Request3 End");
 		}
 		
 		rep = new String[5];
@@ -29,7 +29,7 @@ public class DataRace {
 		ArrayList arr4 = new ArrayList();
 		for(int i=0;i<5;i++){
 			arr4.add("Request 4");
-			System.out.println("Request4 End");
+			//System.out.println("Request4 End");
 		}
 		rep = new String[5];
 		arr4.toArray(rep);

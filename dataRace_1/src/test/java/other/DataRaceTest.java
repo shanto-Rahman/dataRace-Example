@@ -8,7 +8,7 @@ public class DataRaceTest {
     public void DataRaceTest(){
 	    ti = new DataRace();
     	buggy = false;
-        System.out.println("Hello ");
+        //System.out.println("Hello ");
     }
 
     @Test
